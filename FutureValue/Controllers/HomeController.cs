@@ -6,6 +6,8 @@ public class HomeController : Controller
     public IActionResult Index()
     {
         ViewBag.FV = 0;
+        ViewBag.Foot = "[= by learnTechFoundation and mrcsecit =]";
+        ViewBag.link = "https://github.com/bertlandh/FutureValue.MVC";
         return View();
     }
 
