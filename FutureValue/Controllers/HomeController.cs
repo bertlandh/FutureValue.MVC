@@ -17,10 +17,14 @@ public class HomeController : Controller
         if (ModelState.IsValid)
         {
             ViewBag.FV = model.CalculateFutureValue();
+            ViewBag.Foot = "[= by learnTechFoundation and mrcsecit =]";
+            ViewBag.link = "https://github.com/bertlandh/FutureValue.MVC";
         }
         else
         {
             ViewBag.FV = 0;
+            ViewBag.Foot = "[= by learnTechFoundation and mrcsecit =]";
+            ViewBag.link = "https://github.com/bertlandh/FutureValue.MVC";
         }
         return View(model);
     }
